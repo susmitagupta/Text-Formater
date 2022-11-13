@@ -20,6 +20,7 @@ export default function TextForm(props) {
   const handleUpClick = () => {
     let newText = text.toUpperCase();
     setText(newText);
+    props.showAlert("Converted to Upper case","Success");
   };
 
 
@@ -27,6 +28,7 @@ export default function TextForm(props) {
   const handleLwClick = () => {
     let newText = text.toLowerCase();
     setText(newText);
+    props.showAlert("Converted to Lower case","Success");
   };
 
 
@@ -34,6 +36,7 @@ export default function TextForm(props) {
   const handleClear = () => {
     let newText = "";
     setText(newText);
+    props.showAlert("Cleared","Success");
   };
 
 
@@ -42,6 +45,7 @@ export default function TextForm(props) {
   const handleSpace = (event) => {
     let newText = text.split(/[  ]+/);
     setText(newText.join(" "));
+    props.showAlert("Removed extra space","Success");
   };
 
 
@@ -51,6 +55,7 @@ export default function TextForm(props) {
     var text = document.getElementById("myBox");
     text.select();
     navigator.clipboard.writeText(text.value);
+    props.showAlert("Text copied","Success");
   };
 
 
