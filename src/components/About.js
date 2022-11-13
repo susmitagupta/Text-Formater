@@ -18,8 +18,8 @@ export default function About() {
     {
       setMyStyle({
         color: "white",
-        backgroundColor: "black"
-
+        backgroundColor: "black",
+       
     });
     }
     else{
@@ -37,7 +37,7 @@ export default function About() {
   return (
     <div className="container my-4" >
       <div className="card" style={myStyle}>
-        <img src={Capture} className="card-img-top"    style={{ width: 400, height: 400 }} />
+        <img src={Capture} className="card-img-top"    style={{ width: 400, height: 400 }} alt="My Pic" />
         <div className="card-body">
           <h3 className="card-title">Susmita Gupta</h3>
           <p className="card-text">
