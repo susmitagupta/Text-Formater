@@ -18,7 +18,7 @@ export default function About() {
     {
       setMyStyle({
         color: "white",
-        backgroundColor: "black",
+        backgroundColor: "rgb(4 33 62)",
        
     });
     }
