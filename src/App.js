@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      <Router basename="/Text-Formater">
         <Navbar
           title="Text Editor"
           about="About Us"
@@ -44,15 +44,17 @@ function App() {
         <Alert alert={alert} />
 
         <div className="container">
+      
           <Routes>
 
-             <Route exact path="/" element={<TextForm title="Enter the text to analize" mode={mode} showAlert={showAlert} />} />
+             <Route exact path="/Text-Formater" element={<TextForm title="Enter the text to analize" mode={mode} showAlert={showAlert} />} />
            
             <Route exact path="/about" element={<About />} />
 
            
 
           </Routes>
+       
         </div>
       </Router>
     </>
